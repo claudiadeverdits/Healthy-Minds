@@ -1,0 +1,618 @@
+/* 
+Dark blue: #6b9faf 
+blue: #75b4b2 
+light blue: #b6dbdc
+light gray: #f3f4f5 
+dark gray: #b1aecb
+*/
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+.topnav{
+  display: flex;
+  margin: auto;
+  flex-wrap:wrap;
+  /* ^this makes sure all the buttons can be clicked when the screen size is smaller so we should probably keep this (otherwise the end buttons get cut off)*/
+  justify-content: space-around;
+  background-color: #75b4b2; 
+  overflow: hidden;
+  border-radius: 5px;
+}
+.disclaimer{
+  text-align:center;
+  display: flex;
+  margin-top:10px;
+  background-color:#75b4b2;
+  border-radius:5px;
+  padding: 5px;
+  
+}
+.disclaimer p{
+  color:#f3f4f5;
+}
+/* Style the links inside the nav bar */
+.topnav a {
+  
+  margin: 5px;
+  color: #f3f4f5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  
+}
+
+/* when link is hovered in nav bar */
+.topnav a:hover{ 
+  background-color: #b6dbdc;
+  color: #75b4b2; 
+  border-radius:5px;
+}
+
+/* add a color to current page */
+/* .topnav a:active{
+    background-color: 
+} */
+
+.title{
+  font-size: 50px;
+  color: 	#656569;
+  /* margin-left: 20%;
+  display: inline; */
+}
+
+.logo{
+  margin-top: 15px;
+  width: 175px;
+  /* display: inline; */
+}
+.link{
+  font-size: 20px;
+  color: #525255; 
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+a {
+  color:#525255;
+}
+
+/* the top and bottom margins dont work with the display:inline */
+  
+.header{
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
+
+/* FRONT PAGE STUFF ---------------------------------------------------*/
+
+.front-page-images{
+  display: flex;
+  margin: 15px;
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.front-page-image1{
+
+  object-fit: cover;
+  border-radius: 5px;
+  height: 400px;
+  width: 65%;
+
+}
+
+.front-page-image2{
+
+  object-fit: cover;
+  border-radius: 5px;
+  height: 400px;
+  width: 33%;
+ 
+
+}
+
+.front-page-image3{
+
+  margin-top: 30px;
+  object-fit: cover;
+  border-radius: 5px;
+  height: 400px;
+  width: 49%;
+
+
+}
+
+.front-page-image4{
+
+  margin-top: 30px;
+  object-fit: cover;
+  border-radius: 5px;
+  height: 400px;
+  width: 49%;
+
+
+}
+
+.front-page-image1:hover{
+  cursor: pointer;
+  opacity: 80%;
+  transform: scale(1.01);
+}
+.front-page-image2:hover{
+  cursor: pointer;
+  opacity: 80%;
+  transform: scale(1.01);
+}
+.front-page-image3:hover{
+  cursor: pointer;
+  opacity: 80%;
+  transform: scale(1.01);
+}
+.front-page-image4:hover{
+  cursor: pointer;
+  opacity: 80%;
+  transform: scale(1.01);
+}
+
+.front-page-title1{
+  width: 100%;
+  position: left;
+  margin-top: -350px;
+}
+.front-page-title2{
+  width: 100%;
+  position: right;
+  margin-top: -350px;
+  margin-left: 67%;
+}
+.front-page-title3{
+  width: 100%;
+  position: left;
+  margin-top: -350px;
+}
+.front-page-title4{
+  width: 100%;
+  position: right;
+  margin-top: -350px;
+  margin-left: 51%;
+}
+
+.front-page-title h2{
+  text-align: left;
+  margin-left: 20px;
+}
+
+span{
+  line-height: 1.5;
+  color: white;
+  font: bold;
+  letter-spacing: -1px;
+  background: #6b9faf; 
+  opacity: 80%;
+  padding: 10px;
+}
+
+.arrow{
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+  opacity: 50%;
+}
+
+.front-page-text{
+  margin-left: 20px;
+  opacity:100%
+}
+
+.front-page-text-span{
+
+  line-height: 2;
+  background-color: gray; opacity: 75%;
+}
+
+/* ------------------------------------------------------------------------ */
+
+
+h1{
+  color:#525255;
+  text-align: center;
+}
+h2{
+  color:#525255;
+}
+h3{
+  color:#525255;
+}
+h4{
+  color:#727277;
+  font-size: 22px;
+}
+
+body{
+  /* margin-left: 75px;
+  margin-right: 75px; */
+  /* percent better than exact px for smaller size screens */
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #f3f4f5;
+  margin-bottom: 5%; 
+  
+  
+}
+
+p{
+  line-height: 1.75;
+  /* width: 50%;  */
+  /* the text box should be thin to make it easier to read */
+  /* setting p width to 50% messes with specific layouts so if you need text to be 50% of the screen create a class for it and do it like that instead of applying it to all p text */
+  font-size: 18px;
+  font-weight: 100;
+  color: #656569;
+}
+
+.musicHeader{
+  text-align:center;
+}
+/* foundation page formatting */
+
+.foundation{
+  background-color:#b6dbdc;
+  text-align:center;
+  margin-bottom:1px;
+  margin-top:1px;
+  border-radius:5px;
+}
+.foundationh3{
+  padding: 5px;
+}
+.foundation1{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.foundation2{
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.foundationDescription{
+  width:auto;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.allFoundations{
+  display:grid;
+  grid-row-gap:5px;
+  grid-column-gap:5px;
+  grid-template-columns:50%;
+}
+.foundationHeader{
+  display: flex;
+  flex-direction:column;
+  text-align:center;
+  border:1px solid #656569;
+  border-radius:5px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.foundationBtn{
+  color:#656569;
+  background-color:#f3f4f5;
+  border:1px solid #656569;
+  border-radius:5px;
+  cursor:pointer;
+  padding:7.5px;
+  font-size:15px;
+  margin-bottom:15px;
+}
+.foundationBtn:hover{
+  color:#f3f4f5;
+  background-color:#656569;
+  border-color:#f3f4f5;
+}
+.foundationTitle{
+  margin-bottom:5px;
+}
+/* educate yourself */
+
+
+/* self-help page formatting */
+.mainhelpHeader{
+  display: flex; 
+  flex-direction: column;
+}
+
+.inline-border{ 
+	border: 1px solid #656569; 
+  background-color:#f3f4f5;
+  color:#656569;
+  border-radius:5px;
+}
+
+/* myths and facts page */
+.mythsAndFacts{
+  text-align: center;
+}
+
+.mythsAndFactsDesc{
+  width: 60%;
+  margin: auto;
+}
+.mythsAndFactsText{
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  margin: auto;
+  
+}
+
+/* resources page */
+.region{
+  width:auto;
+  text-align:center;
+  margin:5px;
+}
+.regionDescriptions{
+  display:flex;
+  flex-direction:column;
+  background-color:#b6dbdc;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:15px;
+  padding-bottom:15px;
+  border-radius:5px;
+  margin-right:7.5px;
+}
+.generalResources{
+  display: flex;
+  flex-direction:column;
+  text-align:center;
+  border:1px solid #656569;
+  border-radius:5px;
+  margin-left:7.5px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+.resourcesContent{
+  display: flex;
+  justify-content:center;
+}
+.resourcesHeader{
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+}
+label{
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 100;
+  color: #656569;
+  text-align:center;
+}
+.formButton{
+  color:#f3f4f5;
+  background-color:#75b4b2;
+  border:1px solid #f3f4f5;
+  border-radius:5px;
+  cursor:pointer;
+  padding:7.5px;
+  font-size:15px;
+  margin-bottom:15px;
+}
+.formButton:hover{
+  color:#75b4b2;
+  background-color:#f3f4f5;
+  border-color:#75b4b2;
+}
+/* .regionForm{
+  display: block;
+} */
+.resourcesForm{
+  text-align:center;
+  padding:15px;
+/* display: flex;
+justify-content:center; */
+}
+.formBorder{
+border: 1px solid #f3f4f5;
+border-radius:5px;
+padding:15px;
+background-color:#f3f4f5;
+}
+.formHeader{
+  text-align:center;
+}
+.regionDropDown{
+  margin:5px;
+  color:#656569;
+  border-color:#656569;
+  border-radius:5px;
+  padding:5px;
+}
+
+/* region pages */
+.state{
+  background-color:#f3f4f5;
+  margin:5px;
+  border-radius:5px;
+  padding:15px;
+  text-align:center;
+}
+/* .stateFormatting{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  width:80%;
+} */
+
+/* grid formatting */
+.stateFormatting{
+  display:grid;
+  width:80%;
+  grid-row-gap:10px;
+  grid-column-gap:10px;
+  grid-template-columns:50%;
+}
+.ct{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.me{
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.vt{
+  grid-column-start:1;
+  grid-column-end:3;
+}
+
+.al{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.ar{
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+
+.il{
+grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.in{
+grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+
+.az{
+grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.nm{
+grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+
+.co{
+grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.id{
+grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+
+.ak{
+grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.ca{
+grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.wa{
+  grid-column-start:1;
+  grid-column-end:3;
+}
+.stateGenResources{
+  height:55%;
+}
+.state h1{
+  font-weight:bold;
+}
+.stateFormatting h1{
+  background-color:#75b4b2;
+  grid-column-start:1;
+  grid-column-end:3;
+  color:#f3f4f5;
+  border-radius:5px;
+  padding:10px;
+}
+
+/* about us */
+
+.aboutUs{
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.aboutUsImg{
+  object-fit: cover;
+  border-radius: 5px;
+  height: 500px;
+  /* width: 60%; */
+  width:325px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+/* how to help */
+
+.howToHelp{
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+/* self help */
+
+.selfHelp{
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+/* --- */
+
+.generalImage{
+  object-fit: cover;
+  border-radius: 5px;
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.educateImg{
+  object-fit:cover;
+  height: 400px;
+  width: 500px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:5px;
+}
